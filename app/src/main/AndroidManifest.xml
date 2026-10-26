@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Para saber si DTEx® está instalado (visibilidad de paquetes, Android 11+). -->
+    <queries>
+        <package android:name="dev.mufin.dtex" />
+        <package android:name="dev.mufin.dtex.tuu_pro2" />
+    </queries>
+
+    <application android:label="App2App demo">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
