@@ -27,7 +27,7 @@ import java.util.UUID
  * probar la integración en el terminal y como referencia para integradores.
  */
 class MainActivity : Activity() {
-    private val documentos = listOf("ticket", "none", "voucher", "cl_sii_boleta", "cl_sii_boleta_exenta")
+    private val documentos = listOf("ticket", "none", "cl_sii_boleta", "cl_sii_boleta_exenta")
 
     private lateinit var monto: EditText
     private lateinit var propina: EditText
@@ -99,7 +99,7 @@ class MainActivity : Activity() {
             text = "Activar equipo"
             setOnClickListener { activar() }
         }
-        // Un botón por tipo: el selector de arriba también tiene none y voucher,
+        // Un botón por tipo: el selector de arriba también tiene none,
         // que no llevan folios.
         val foliosTicket = Button(this).apply {
             text = "Descargar folios ticket"

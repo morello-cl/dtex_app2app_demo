@@ -43,7 +43,7 @@ Esta demo implementa el contrato completo en un solo archivo, [`MainActivity.kt`
 
 | Acción | Para qué sirve |
 |---|---|
-| **Cobrar** · `PAYMENT` | Monto, propina, vuelto y documento (`ticket`, `none`, `voucher`, `cl_sii_boleta`, `cl_sii_boleta_exenta`), con o sin impresión. |
+| **Cobrar** · `PAYMENT` | Monto, propina, vuelto y documento (`ticket`, `none`, `cl_sii_boleta`, `cl_sii_boleta_exenta`), con o sin impresión. |
 | **Reintentar** · mismo `request_id` | DTEx® devuelve el resultado guardado y no vuelve a cobrar. |
 | **Consultar estado** · `STATUS` | En qué etapa quedó un cobro, aunque tu app haya muerto mientras cobraba. |
 | **Despertar** · `WAKE_UP` | Deja DTEx® listo antes del cobro. |
