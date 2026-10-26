@@ -11,6 +11,8 @@ import android.os.Parcel
 import android.os.RemoteException
 import android.text.InputType
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
@@ -69,6 +71,14 @@ class MainActivity : Activity() {
             adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_spinner_dropdown_item, documentos)
         }
         imprimir = Switch(this).apply { text = "DTEx® imprime"; isChecked = true }
+        // Con `none` no hay documento que imprimir: DTEx® ignora `print`.
+        documento.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                imprimir.isEnabled = documentos[position] != "none"
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
+        }
         respuesta = TextView(this).apply { setTextIsSelectable(true) }
 
         val cobrar = Button(this).apply {
