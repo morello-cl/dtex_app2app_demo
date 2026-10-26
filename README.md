@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://www.dtex.cl/developers/app2app"><img alt="Contrato App2App" src="https://img.shields.io/badge/contrato-App2App%20v1-1f55bd?style=flat-square"></a>
-  <img alt="Android 7+" src="https://img.shields.io/badge/Android-7.0%2B-0a7b69?style=flat-square&logo=android&logoColor=white">
+  <img alt="Android 6+" src="https://img.shields.io/badge/Android-6.0%2B-0a7b69?style=flat-square&logo=android&logoColor=white">
   <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-2.1-143f95?style=flat-square&logo=kotlin&logoColor=white">
   <a href="LICENSE"><img alt="Licencia MIT" src="https://img.shields.io/badge/licencia-MIT-0d2e72?style=flat-square"></a>
   <a href="https://github.com/morello-cl/dtex_app2app_demo/pulls"><img alt="PR bienvenidos" src="https://img.shields.io/badge/PR-bienvenidos-3ec5ad?style=flat-square"></a>
